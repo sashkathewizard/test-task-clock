@@ -1,0 +1,11 @@
+.errorBlock {
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.visible {
+    display: block;
+}

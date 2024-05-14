@@ -1,7 +1,12 @@
 import React from 'react';
 import classes from './index.module.css';
 
-const SubmitButton: React.FC<{ onClick: () => void; text: string; }> = ({onClick, text}) => {
+interface Props {
+  onClick: () => void;
+  text: string;
+}
+
+const SubmitButton: React.FC<Props> = ({onClick, text}) => {
 
   const handleClick = () => {
     onClick();

@@ -2,7 +2,11 @@ import React from 'react';
 import Clock from "react-clock";
 import classes from './index.module.css';
 
-const ClockComponent: React.FC<{ value: string }> = ({value}) => {
+interface Props {
+  value: string;
+}
+
+const ClockComponent: React.FC<Props> = ({value}) => {
 
   const dateValue = new Date(`2000-01-01T${value}`);
 
